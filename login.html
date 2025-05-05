@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login - EstateSell</title>
+  <link rel="stylesheet" href="login.css" />
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="navbar-container">
+          <div class="logo">EstateSells</div>
+          <nav>
+            <ul>
+              <li><a href="home.html">Home</a></li>
+              <li><a href="#">For Buy</a></li>
+              <li><a href="#">For Rent</a></li>
+              <li><a href="#">For Sell</a></li>
+              <li><a href="#">Commercial</a></li>
+            </ul>
+          </nav>
+          <div class="nav-icons">
+            <div class="support">
+              <img src="https://img.icons8.com/ios-filled/24/ffffff/phone.png" alt="Support"/>
+              <span>24x7 Support</span>
+            </div>
+            <div class="login-icon dropdown">
+                <a href=""><img src="https://img.icons8.com/material-outlined/24/ffffff/user.png" alt="Login"/></a>
+                <ul class="dropdown-menu">
+                    <li><a href="register.html" class="login-button">LOGIN / REGISTER</a></li>
+                    <li><a href="dashboard.html">My Account</a></li>
+                    <li><a href="#">Recently Searched</a></li>
+                    <li><a href="#">Recently Viewed</a></li>
+                    <li><a href="#">Shortlisted</a></li>
+                  </ul>
+                  
+              </div>
+              
+          </div>
+        </div>
+      </header>
+
+  <div class="login-container">
+    <div class="login-card">
+      <h2>Login</h2>
+      <form action="/dashboard.html" method="POST">
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" required />
+        </div>
+        <div class="form-options">
+          <label><input type="checkbox" name="remember" /> Remember Me</label>
+          <a href="#">Forgot Password?</a>
+        </div>
+        <button type="submit" class="login-btn">Login</button>
+        <p class="register-link">Don't have an account? <a href="register.html">Register</a></p>
+      </form>
+    </div>
+  </div>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
