@@ -205,6 +205,49 @@ nav ul li a:hover::after {
   }
 }
 
+/* Login / Register button */
+.login-button {
+  background-color: #0557dc;
+  color: white !important;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.login-button:hover {
+  background-color: #002766;
+  color: black !important;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  nav ul {
+    display: none;
+    flex-direction: column;
+    background: rgba(0, 107, 229, 0.95);
+    width: 100%;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    padding: 10px 0;
+    z-index: 999;
+  }
+
+  nav ul.active {
+    display: flex;
+  }
+
+  .nav-icons {
+    flex-direction: row;
+    margin-top: 10px;
+  }
+}
+
 /* Login / Register button style */
 .login-button {
   background-color: #0557dc;

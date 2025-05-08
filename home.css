@@ -7,7 +7,7 @@
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
   }
-  
+
 /* Navbar */
 .navbar {
   position: fixed;
@@ -202,46 +202,85 @@ nav ul li a:hover::after {
 
   
   /* Hero Section */
-  .hero {
-    height: 100vh;
-    background: url(image/hero-img.jpg) no-repeat center center/cover;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    color: white;
-    text-align: center;
-  }
-  .hero::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: rgba(0, 0, 0, 0.4);
-  }
-  .hero-content {
-    position: relative;
-    z-index: 1;
-  }
+.hero {
+  height: 100vh;
+  background: url(image/hero-img.jpg) no-repeat center center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  color: white;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+}
+
+.hero-content button {
+  padding: 12px 24px;
+  font-size: 1rem;
+  background-color: #ff7f50;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.hero-content button:hover {
+  background-color: #e0673e;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
   .hero-content h1 {
-    font-size: 3rem;
-    margin-bottom: 20px;
+    font-size: 2.2rem;
   }
+
   .hero-content p {
-    font-size: 1.5rem;
-    margin-bottom: 30px;
+    font-size: 1.2rem;
   }
+
   .hero-content button {
-    padding: 12px 24px;
+    padding: 10px 20px;
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-content h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero-content p {
     font-size: 1rem;
-    background-color: #ff7f50;
-    color: white;
-    border: none;
-    border-radius: 6px;
-    cursor: pointer;
   }
-  .hero-content button:hover {
-    background-color: #e0673e;
+
+  .hero-content button {
+    padding: 8px 18px;
+    font-size: 0.9rem;
   }
+}
+
   
   /* New Search Panel (below hero) */
   .search-panel {
