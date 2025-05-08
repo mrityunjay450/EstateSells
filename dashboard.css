@@ -127,8 +127,8 @@
   .dropdown-menu {
     display: none;
     position: absolute;
-    top: 30px;
-    right: 0;
+    top: 40px;
+    right: -100px;
     background: white;
     color: #333;
     list-style: none;
