@@ -11,7 +11,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background: url(image/hero-img.jpg);
+  background: url(image/hero-img.jpg) no-repeat center center/cover;
 }
 
 /* Navbar */
