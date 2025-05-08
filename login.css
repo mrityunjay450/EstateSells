@@ -187,13 +187,18 @@ nav ul li a:hover::after {
   nav ul {
     display: none;
     flex-direction: column;
-    background: rgba(0, 107, 229, 0.95);
+    background: rgba(7, 68, 138, 0.87);
     width: 100%;
     position: absolute;
     top: 60px;
     left: 0;
-    padding: 10px 0;
+    padding: 10px 40%;
     z-index: 999;
+  }
+
+  nav ul li a{
+    font-size: 18px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   }
 
   nav ul.active {
@@ -219,34 +224,6 @@ nav ul li a:hover::after {
 .login-button:hover {
   background-color: #002766;
   color: black !important;
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-  .hamburger {
-    display: block;
-  }
-
-  nav ul {
-    display: none;
-    flex-direction: column;
-    background: rgba(0, 107, 229, 0.95);
-    width: 100%;
-    position: absolute;
-    top: 60px;
-    left: 0;
-    padding: 10px 0;
-    z-index: 999;
-  }
-
-  nav ul.active {
-    display: flex;
-  }
-
-  .nav-icons {
-    flex-direction: row;
-    margin-top: 10px;
-  }
 }
 
 .login-container {

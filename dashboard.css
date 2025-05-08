@@ -183,13 +183,18 @@
     nav ul {
       display: none;
       flex-direction: column;
-      background: rgba(0, 107, 229, 0.95);
+      background: rgba(7, 68, 138, 0.87);
       width: 100%;
       position: absolute;
       top: 60px;
       left: 0;
-      padding: 10px 0;
+      padding: 10px 40%;
       z-index: 999;
+    }
+  
+    nav ul li a{
+      font-size: 18px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.2);
     }
   
     nav ul.active {

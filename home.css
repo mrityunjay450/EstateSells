@@ -181,13 +181,18 @@ nav ul li a:hover::after {
   nav ul {
     display: none;
     flex-direction: column;
-    background: rgba(0, 107, 229, 0.95);
+    background: rgba(7, 68, 138, 0.87);
     width: 100%;
     position: absolute;
     top: 60px;
     left: 0;
-    padding: 10px 0;
+    padding: 10px 40%;
     z-index: 999;
+  }
+
+  nav ul li a{
+    font-size: 18px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   }
 
   nav ul.active {
@@ -252,32 +257,35 @@ nav ul li a:hover::after {
 
 /* Responsive styles */
 @media (max-width: 768px) {
-  .hero-content h1 {
+  .hero ero-content h1 {
     font-size: 2.2rem;
   }
 
-  .hero-content p {
+  .hero .hero-content p {
     font-size: 1.2rem;
   }
 
-  .hero-content button {
+  .hero .hero-content button {
     padding: 10px 20px;
     font-size: 0.95rem;
   }
 }
 
 @media (max-width: 480px) {
-  .hero-content h1 {
-    font-size: 1.8rem;
+  .hero .hero-content h1 {
+    font-size: 3rem;
   }
 
-  .hero-content p {
-    font-size: 1rem;
+  .hero .hero-content p {
+    font-size: 1.5rem;
   }
 
   .hero-content button {
     padding: 8px 18px;
-    font-size: 0.9rem;
+    font-size: 1.3rem;
+  }
+  .hero{
+    height: 88vh;
   }
 }
 
@@ -348,6 +356,21 @@ nav ul li a:hover::after {
     }
   }
   
+  @media (max-width: 480px) {
+    .search-panel {
+      margin: -70px 10px 20px;
+    }
+    .search-box input {
+      min-width: 100px;
+    }
+    .tabs button{
+      font-size: 1.2rem;
+    }
+    .search-box button {
+      padding: 8px 16px;
+      font-size: 15px;
+    }
+  }
 
   /* Info Blocks Section */
 .info-blocks {
