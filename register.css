@@ -273,7 +273,7 @@ nav ul li a:hover::after {
   width: 100%;
   max-width: 400px;
   padding: 20px;
-  margin-top: 50px;
+  margin-top: 20px;
 }
 
 .register-card {
@@ -352,6 +352,7 @@ nav ul li a:hover::after {
   .register-card h2 {
     font-size: 2rem;
   }
+  
   .register-card p, p a{
     font-size: 1.3rem;
   }
