@@ -10,37 +10,37 @@
 
   <header class="navbar">
     <div class="navbar-container">
-      <div class="logo">EstateSells</div>
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="login.html">Dashboard</a></li>
-          <li><a href="#">For Buy</a></li>
-          <li><a href="#">For Rent</a></li>
-          <li><a href="#">For Sell</a></li>
-          <li><a href="#">Commercial</a></li>
-        </ul>
-      </nav>
-      <div class="nav-icons">
-        <div class="support">
-          <img src="https://img.icons8.com/ios-filled/24/ffffff/phone.png" alt="Support"/>
-          <span>24x7 Support</span>
+        <div class="logo">EstateSells</div>
+        <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+        <nav>
+            <ul id="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="login.html">Dashboard</a></li>
+                <li><a href="#">For Buy</a></li>
+                <li><a href="#">For Rent</a></li>
+                <li><a href="#">For Sell</a></li>
+                <li><a href="#">Commercial</a></li>
+            </ul>
+        </nav>
+        <div class="nav-icons">
+            <div class="support">
+                <img src="https://img.icons8.com/ios-filled/24/ffffff/phone.png" alt="Support"/>
+                <span>24x7 Support</span>
+            </div>
+            <div class="login-icon dropdown">
+                <a href="#"><img src="https://img.icons8.com/material-outlined/24/ffffff/user.png" alt="Login"/></a>
+                <ul class="dropdown-menu">
+                    <li><a href="register.html" class="login-button">LOGIN / REGISTER</a></li>
+                    <li><a href="dashboard.html">My Account</a></li>
+                    <li><a href="#">Recently Searched</a></li>
+                    <li><a href="#">Recently Viewed</a></li>
+                    <li><a href="#">Shortlisted</a></li>
+                </ul>
+            </div>
         </div>
-        <div class="login-icon dropdown">
-            <a href=""><img src="https://img.icons8.com/material-outlined/24/ffffff/user.png" alt="Login"/></a>
-            <ul class="dropdown-menu">
-                <li><a href="register.html" class="login-button">LOGIN / REGISTER</a></li>
-                <li><a href="dashboard.html">My Account</a></li>
-                <li><a href="#">Recently Searched</a></li>
-                <li><a href="#">Recently Viewed</a></li>
-                <li><a href="#">Shortlisted</a></li>
-              </ul>
-              
-          </div>
-          
-      </div>
     </div>
-  </header>
+</header>
+
 
   <!-- Hero Fullscreen -->
   <section class="hero">

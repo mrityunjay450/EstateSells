@@ -20,7 +20,7 @@ body {
   top: 0;
   padding: 10px 30px;
   z-index: 1000;
-  background: rgba(0, 107, 229, 0.871); /* transparent glass */
+  background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   transition: background 0.3s ease, box-shadow 0.3s ease;
@@ -28,48 +28,42 @@ body {
 }
 
 .navbar.scrolled {
-  background: rgba(0, 107, 229, 0.871); /* solid color */
-  color: #000;
+  background: rgba(0, 107, 229, 0.95);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-}
-
-.navbar.scrolled .logo,
-.navbar.scrolled nav ul li a,
-.navbar.scrolled .support,
-.navbar.scrolled .support span {
-  color: #000 !important;
-}
-
-.navbar.scrolled .support {
-  background-color: transparent;
-  border: 2px solid rgb(0, 0, 0);
-}
-.navbar.scrolled .support:hover {
-  background-color: rgba(0, 107, 229, 0.871);
-  color: white;
-}
-
-.navbar.scrolled .dropdown img {
-  filter: invert(0);
 }
 
 .navbar-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
   max-width: 1200px;
   margin: 0 auto;
 }
+
 .logo {
   font-size: 24px;
   font-weight: bold;
   color: white;
 }
+
+/* Hamburger */
+.hamburger {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: white;
+}
+
+/* Nav */
 nav ul {
   display: flex;
   list-style: none;
   gap: 30px;
+  margin: 0;
+  padding: 0;
 }
+
 nav ul li a {
   color: white;
   text-decoration: none;
@@ -92,13 +86,8 @@ nav ul li a::after {
 nav ul li a:hover::after {
   width: 100%;
 }
-.nav-icons {
-  display: flex;
-  align-items: center;
-  gap: 15px;
-}
 
-/* Support Button */
+/* Support */
 .support {
   display: flex;
   align-items: center;
@@ -110,27 +99,36 @@ nav ul li a:hover::after {
   font-size: 14px;
   cursor: pointer;
   transition: background 0.3s ease;
-  text-decoration: none;
 }
+
 .support:hover {
   background-color: rgba(0, 59, 149, 1);
 }
+
 .support img {
   width: 18px;
   height: 18px;
 }
 
-/* Login Icon */
-.login-icon img {
-  width: 24px;
-  height: 24px;
+/* Nav Icons */
+.nav-icons {
+  display: flex;
+  align-items: center;
+  gap: 15px;
 }
+
 /* Dropdown */
 .dropdown {
   position: relative;
 }
 
+.login-icon img {
+  width: 25px;
+  height: 25px;
+}
+
 .dropdown-menu {
+  display: none;
   position: absolute;
   top: 30px;
   right: 0;
@@ -139,8 +137,7 @@ nav ul li a:hover::after {
   list-style: none;
   padding: 10px 0;
   border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-  display: none;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
   min-width: 200px;
   z-index: 1001;
 }
@@ -161,9 +158,51 @@ nav ul li a:hover::after {
   background: #f2f2f2;
 }
 
-/* Show dropdown on hover */
 .dropdown:hover .dropdown-menu {
   display: block;
+}
+
+/* Login / Register button */
+.login-button {
+  background-color: #0557dc;
+  color: white !important;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.login-button:hover {
+  background-color: #002766;
+  color: black !important;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  nav ul {
+    display: none;
+    flex-direction: column;
+    background: rgba(0, 107, 229, 0.95);
+    width: 100%;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    padding: 10px 0;
+    z-index: 999;
+  }
+
+  nav ul.active {
+    display: flex;
+  }
+
+  .nav-icons {
+    flex-direction: row;
+    margin-top: 10px;
+  }
 }
 
 /* Login / Register button style */

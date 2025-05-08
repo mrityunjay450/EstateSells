@@ -22,3 +22,13 @@ function searchProperties() {
     e.preventDefault();
     window.location.href = "dashboard.html"; // redirect to dashboard
   });
+
+  function toggleMenu() {
+    const navMenu = document.getElementById('nav-menu');
+    navMenu.classList.toggle('active');
+  }
+
+  window.addEventListener('scroll', function () {
+    const navbar = document.querySelector('.navbar');
+    navbar.classList.toggle('scrolled', window.scrollY > 50);
+  });
