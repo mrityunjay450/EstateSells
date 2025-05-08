@@ -311,3 +311,37 @@ nav ul li a:hover::after {
 .register-link a:hover {
   text-decoration: underline;
 }
+
+
+@media (max-width: 768px) {
+    .login-container {
+      padding: 10px;
+    }
+
+    .login-card {
+      padding: 20px;
+    }
+
+    .login-card h2 {
+      font-size: 3rem;
+    }
+    .login-card p, p a{
+      font-size: 1.3rem;
+    }
+
+    .form-group input {
+      padding: 8px;
+    }
+    .form-group, .form-options label {
+      font-size: 1.5rem;
+    }
+
+    .form-options a{
+      font-size: 1.3rem;
+    }
+
+    .login-btn {
+      padding: 10px;
+      font-size: 1.2rem;
+    }
+  }
