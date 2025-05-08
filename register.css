@@ -229,7 +229,7 @@ nav ul li a:hover::after {
 }
 
 .register-card {
-  background: rgba(37, 127, 230, 0.269);
+  background: rgba(206, 223, 241, 0.576);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   border-radius: 10px;
