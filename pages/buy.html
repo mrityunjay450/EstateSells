@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Buy Properties - EstateSells</title>
+  <link rel="stylesheet" href="./pagesStyle/buy.css"> <!-- Add your global styles here -->
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="navbar-container">
+        <div class="logo">EstateSells</div>
+        <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+        <nav>
+            <ul id="nav-menu">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../login.html">Dashboard</a></li>
+                <li><a href="#">For Buy</a></li>
+                <li><a href="#">For Rent</a></li>
+                <li><a href="#">For Sell</a></li>
+                <li><a href="#">Commercial</a></li>
+            </ul>
+        </nav>
+        <div class="nav-icons">
+            <div class="login-icon dropdown">
+                <a href="#"><img src="https://img.icons8.com/material-outlined/24/ffffff/user.png" alt="Login"/></a>
+                <ul class="dropdown-menu">
+                    <li><a href="../register.html" class="login-button">LOGIN / REGISTER</a></li>
+                    <li><a href="../dashboard.html">My Account</a></li>
+                    <li><a href="#">Recently Searched</a></li>
+                    <li><a href="#">Recently Viewed</a></li>
+                    <li><a href="#">Shortlisted</a></li>
+                </ul>
+            </div>
+            <div class="support">
+              <img src="https://img.icons8.com/ios-filled/24/ffffff/phone.png" alt="Support"/>
+              <span>Contact Us</span>
+          </div>
+        </div>
+    </div>
+</header>
+
+  <main style="margin-top: 100px;">
+    <section class="buy-hero">
+      <h1>Find Your Dream Home</h1>
+      <p>Browse properties available for sale across the country</p>
+    </section>
+
+    <section class="filters">
+      <form>
+        <input type="text" placeholder="Location" />
+        <select>
+          <option>Property Type</option>
+          <option>House</option>
+          <option>Apartment</option>
+          <option>Villa</option>
+        </select>
+        <select>
+          <option>Price Range</option>
+          <option>Under ₹50L</option>
+          <option>₹50L - ₹1Cr</option>
+          <option>Above ₹1Cr</option>
+        </select>
+        <button type="submit">Search</button>
+      </form>
+    </section>
+
+    <section class="property-list">
+      <div class="property-card">
+        <img src="https://via.placeholder.com/300x200" alt="House" />
+        <h3>3 BHK Villa in Mumbai</h3>
+        <p>₹85,00,000 | 1800 sq.ft | Gated Community</p>
+      </div>
+
+      <div class="property-card">
+        <img src="https://via.placeholder.com/300x200" alt="House" />
+        <h3>2 BHK Flat in Delhi</h3>
+        <p>₹60,00,000 | 1200 sq.ft | Near Metro</p>
+      </div>
+
+      <!-- Add more cards -->
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 EstateSells. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
